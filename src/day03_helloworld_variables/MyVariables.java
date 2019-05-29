@@ -13,6 +13,7 @@ public class MyVariables {
 		  System.out.println("-------");
 			    //Type your code here 
 			  
+	
 	}
 		
 	

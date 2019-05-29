@@ -1,4 +1,4 @@
-package day29;
+package day29_GoOver;
 
 public class ReverseString {
 
@@ -7,6 +7,7 @@ public class ReverseString {
 		String t = today.substring(0,4);
 		String d = today.substring(4);
 		System.out.println(t+ '\n'+ d);
+		int _42 = 10;
 		
 		
 		for (int i = 0; i < today.length(); i++) {

@@ -8,12 +8,14 @@ public class Palindrome {
 		Scanner scan = new Scanner (System.in);
 		System.out.println("Enter word to test");
 		
-		String word = scan.next();
+		String word = scan.nextLine();
 		String reversed = "";
 		
-		
+		word = word.replace(" ", "");
 		int idx = word.length()-1;
+		reversed =reversed.replace(" ", "");
 		while (idx>=0) {
+
 			reversed = reversed + word.charAt(idx);
 			idx--;
 			
