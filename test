@@ -1,0 +1,33 @@
+
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class firstSelenium {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "/Users/Munkhnasan/Documents/selenium dependencies/" +
+                "drivers/chromedriver");
+   WebDriver driver = new ChromeDriver();
+
+    driver.get("https://google.com");
+    //driver.get("https://cybertekschool.com");
+
+    String title = driver.getTitle();
+
+    //getTitle returns the title of the current
+        System.out.println("title = " + title);
+        
+    String url = driver.getCurrentUrl();
+        System.out.println("url = " + url);
+        driver.navigate().forward();
+        driver.navigate().to("url");
+        driver.get("url");
+        
+
+
+
+    }
+}
